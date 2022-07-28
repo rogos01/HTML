@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listas</title>
+</head>
+<body>
+    <!--Las listas en HTML sirven para listar contenido. En función del tipo de contenido de nuestra lista tenemos tres tipos de listas:
+        
+        ul -> unordered list: Se utiliza cuando el orden de los elementos no influyen (listas de compra)
+
+        ol -> ordered list: Se utiliza cuando el orden de los elemntos es importante (top 10 de algo)
+
+        Cada elemento de la lista se representa con la etiqueta <li>, tanto en las <ul> o en las <ol>
+
+        Se pueden construir listas anidadas teniendo en uno de los <li> otro <ul>/<ol> según sea necesario
+
+            <ol>
+                <li>
+                    HTML
+                    <ul>
+                        <li>Estructuras</li>
+                        <li>Sintaxis</li>
+                        <li>Etiquetas</li>
+                    </ul>
+                </li>
+            </ol>
+
+        dl -> definition list: Se utiliza para hacer una lista de definiciones (diccionario)
+
+        Cada elemento de una lista de definición lleva dos etiquetas:
+            dt -> definition term: El término que vamos a definir
+            dd -> definition description: La descripción del término
+    -->
+    <section>
+        <h1>Listas</h1>
+        <!--Así se contruye un menú de navegación-->
+        <nav>
+            <ul>
+                <li><a href="#List-1">Post 1</a></li>
+                <li><a href="#List-2">Post 2</a></li>
+            </ul>
+        </nav>
+
+        <article id="List-1">
+            <h2>Lista de compra</h2>
+            <ul>
+                <li>Pan</li>
+                <li>Leche</li>
+                <li>Huevos</li>
+            </ul>
+            <footer>Unordered list</footer>
+        </article>
+
+        <article id="List-2">
+            <h2>Orden de aprendizaje en el desarrollo web</h2>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java Script</li>
+            </ol>
+            <footer>Ordered list</footer>
+        </article>
+
+        <article>
+            <h2>Lenguajes para el desarrollo web</h2>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Hyper Text Markup Languaje: Es un lenguaje de marcado que se usa para estructurar datos en una página web</dd>
+
+                <dt>CSS</dt>
+                <dd>Cascade Style Sheets: Es un lenguaje de diseño que se usa para darle estilos a HTML</dd>
+
+                <dt>Java Script</dt>
+                <dd>Es un lenguaje de programación para dar interactividad a un sitio web</dd>
+            </dl>
+        </article>
+
+        <!--
+            Atributos de listas
+            
+            ol -> type: Estilo de numeración (1, A, a, I, i)
+                  start: Inicio de las secuencias (un número)
+            ul -> type: Estilo de los items (disc, square circle)
+        -->
+
+        <article>
+            <h2>Atributos de listas ul</h2>}
+            <!--Son obsoletos, mejor usar CSS en estos casos-->
+            <ul type="disc">    <!--se queda igual -->
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+            </ul>
+            <ul type="square">    <!--el icono es un cuadrado -->
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+            </ul>
+            <ul type="circle">    <!--el icono es un circulo sin relleno-->
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Atributos de listas ol</h2>
+            <ol type="1" start="0">
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+            </ol>
+            <ol type="A" start="3">
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+            </ol>
+            <ol type="a" start="6">
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+            </ol>
+            <ol type="I" start="9">
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+            </ol>
+            <ol type="i" start="12">
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+            </ol>
+        </article>
+    </section>
+</body>
+</html>

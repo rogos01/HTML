@@ -1,0 +1,17 @@
+IP: Identificador numérico de una página web, es único y representa la dirección donde está el ordenador que contiene esa página web.
+
+Dominio/URL: Nombre asociado a la IP que utilizamos para solicitar recursos, en nuestra caso un sitio web.
+
+DNS: Servidor cuya principal función es trafucir el nombre de dominio a su identificador único.
+
+Sitio web: Conjunto de uno o varios recursos web alojados en el mismo dominio.
+
+Servidor web: Es un ordenador cuyo objetivo es servir recursos web.
+
+Hosting: Es el almacenamiento del servidor web. El disco duro donde el servidor guarda los recursos.
+
+Petición: Es la acción de pedir recursos a un servidor.
+-------------------------------------------------------------------------------
+¿Qué es HTML? 
+	Es un lenguaje de marcado de hipertexto (Hyper Text Markup Languaje), por lo tanto HTML no es un lenguaje de programación, sino un lenguaje de estructura o de marcado. Con HTML se construye la base de una página web
+-------------------------------------------------------------------------------

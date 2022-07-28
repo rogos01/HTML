@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Enlaces</title>
+</head>
+<!--
+    Enlaces: Conocidos también como links, su objetivo es conectar una página web con otra, con un recurso tanto interno como externo, o con otro sitio web.
+    Tienen como atributo obligatorio href, donde le especificamos la ruta del recurso o sitio que queremos obtener.
+    También tiene el atributo target, que ocnfigura cómo queremos visulaizar el recurso o sitio que 
+    solicitamos.
+
+    *Rutas absolutas: Tienen un progtocolo, http o https y son únicas en la red, suelen utilizar para rutas externas.
+    
+    *Rutas relativas: Pueden ser relativas al punto donde nos encontramos o relativas a la raíz del proyecto.
+    
+    No usan protocolo.
+    
+    Si el recurso se encuentra al mismo nivel (en la misma carpeta) pondremos unicamente el nombre del archivo.
+    Si necesitamos salir de la carpeta actual usaremos ../ y se pone uno por cada nivel (carpeta) de la que queramos salir.
+
+    Atributos de los enlaces:
+        target: define donde se abrirá el recurso solicitado. Por norma general siempre que usemos rutas absolutas poner como valor:
+        "_blank" lo abre en la misma pestaña (valor por defecto, es como no poner nada)
+        "_self" lo abre en otra pestaña
+
+        download: Atributo booleano, sirve para descargar el recurso solicitado. 
+        IMPORTANTE: el recurso debe de estar en tu mismo servidor
+        si no esta en tu servidor no descagará nada
+-->
+<body>
+    <h1>
+        Home
+    </h1>
+    
+    <!--Ruta relativa al punto donde nos encontramos solo busca dentro de una carpeta-->
+    <a href="ProfesoresFi.html" download>Ir a Profesores de la Fi<br></a>   <!--En lugar de abrir el recurso lo descarga-->
+    
+    <!--Ruta absoluta-->
+    <a href="https://google.com" target="_blank">Ir a google<br></a>    <!--con _blank abre otra pestaña-->
+    
+    <!--Ruta relativa fuera de la carpeta actual (dentro hacia afuera)-->
+    <a href="../9Enlaces1_1.html">Ir a enlaces 1.1<br></a>
+    
+    <!--Ruta relativa fuera de la carpeta actual (afuera hacia dentro)
+    <a href="curso/9Enlaces_1.html">Regresar a Home</a>
+    -->
+
+    <!--Se descarga la imagen por que está en nuestro servidor-->
+    <a href="/curso/Assets/Imagenes/1piece leon.jpg" download>Descargar imagen del Sunny One Piece</a>
+    <!--Navegación a través de anclas, viajar entre páginas, a un punto especifico de otra página -->
+    <nav>
+        <p><a href="/curso/páginas/blog.html#Post-1">Post 1</a></p>
+        <p><a href="/curso/páginas/blog.html#Post-2">Post 2</a></p>
+        <p><a href="/curso/páginas/blog.html#Post-3">Post 3</a></p>
+        <p><a href="/curso/páginas/blog.html#Post-4">Post 4</a></p>
+        <p><a href="/curso/páginas/blog.html#Post-5">Post 5</a></p>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Sección de contenido II
+    </title>
+</head>
+
+<!--
+    section: Es un contenedor genérico que agrupa contenido que está relacionado. Cuando creamos bloques cuyo contenido es parte de un bloque total usaremos section.
+    
+    article: Es un contenedor que representa contenido independiente, es decir, podemos leer ese fragmento en cualquier otro sitio y tendría sentido por sí mismo.
+    
+    aside: Se utliza para representar contenido relacionado pero que no forma parte del contenido principal.
+    
+    Anidamiento: Un section puede contener articles, por ejemplo, si tenemos varios artículos que hablan sobre etiquetas HTML, deben de ir en un section, ya que es contenido relacionado entre si, y los article serían contenido independiente porque podríamos leer uno sin haber leido el resto, y seguiria teniendo sentido.
+    El article es definido como un componente de la página de contenido independiente, esto implica que esta etiqueta pueda tener un header y un footer propio.
+    
+    Tambien existe el caso en el que un article contenga varias secciones, el articulo independiente podría ser navegadores y este contener dentro secciones como navegadores más utilizados en 2022
+-->
+<!--section con un article dentro-->
+
+    <body>
+    <header>
+        <h1>
+            Noticias Nacionales
+        </h1>
+    </header>
+    <main>
+        <section>
+            <h2>
+                Section de contenedor
+            </h2>
+            <section>
+
+                <h3>
+                    Noticias del día
+                </h3>
+                <article>       <!--Como el article es independiente se le permite tener su header y su footer-->
+                    <header>
+                        <h4>
+                            Noticia 1
+                        </h4>
+                    </header>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non iure nobis sint enim ducimus. A eius expedita assumenda commodi veritatis reprehenderit repellendus iure sed nesciunt quidem quaerat, eligendi saepe totam?
+                    </p>
+                    <footer>
+                        La noticia 1 sucedio en la CDMX
+                    </footer>
+            </article>
+            <article>
+                <h4>
+                    Noticia 2
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nesciunt ratione, repellendus ducimus placeat fuga unde consectetur maiores iure ex quaerat similique, sit voluptates dolor, nisi corporis velit necessitatibus non?
+                </p>
+            </article>
+            <article>
+                <h4>
+                    Notica 3
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae provident labore hic quasi, iure sint amet nesciunt sed quo ullam veritatis vero harum magni molestiae praesentium pariatur deleniti quos voluptatibus.
+                </p>
+            </article>
+        </section>    
+    </section>
+    </main>
+    <footer>
+        25/03/2022 
+    </footer>
+
+  
+</body>
+
+</html>
+
+<!--
+    https://validator.w3.org/#validate_by_input
+    Poder checar si la semantioca del código esta bien
+-->
